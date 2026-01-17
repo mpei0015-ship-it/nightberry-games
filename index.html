@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightberry Games — Indie Studio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-row">
+      <a class="logo" href="#home">◆ Nightberry Games</a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks">
+        ☰ <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="is-active">Home</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="container">
+          <p class="small-text">Independent game studio • Australia</p>
+          <h1>Crafting worlds with mystery and meaning.</h1>
+          <p class="subtitle">
+            Nightberry Games creates atmospheric, story-rich experiences through hand-crafted worlds and soundscapes.
+          </p>
+
+          <div class="buttons">
+            <a class="btn primary" href="#games">Explore games</a>
+            <a class="btn ghost" href="#news">Read updates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO -->
+    <section id="studio" class="section">
+      <div class="container studio-grid">
+        <div>
+          <h2 class="studio-title">Studio</h2>
+          <p class="studio-lead">
+            Nightberry Games is a small, independent studio focused on tight gameplay,
+            strong art direction, and storytelling through atmosphere.
+          </p>
+
+          <div class="studio-pills">
+            <span class="pill">Hand-crafted worlds</span>
+            <span class="pill">Player-first design</span>
+            <span class="pill">Moody sound &amp; lighting</span>
+          </div>
+
+          <div class="studio-cards">
+            <article class="info-card">
+              <h3>Our focus</h3>
+              <p>Exploration-driven gameplay, responsive combat, and environmental narrative.</p>
+            </article>
+
+            <article class="info-card">
+              <h3>How we work</h3>
+              <p>Prototype → playtest → refine → polish.</p>
+            </article>
+          </div>
+        </div>
+
+        <figure class="studio-frame">
+          <img src="images/section-bg.avif" alt="Dark atmospheric studio artwork" />
+          <figcaption>Behind the scenes: concept art and iteration.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- GAMES & PROJECTS -->
+    <section id="games" class="section alt">
+      <div class="container">
+        <h2>Games &amp; Projects</h2>
+        <p class="muted">Featured works and releases from Nightberry Games.</p>
+
+        <div class="cards">
+
+          <!-- Hollowveil -->
+          <article class="card">
+            <div class="card-img">
+              <img src="images/hollowveil.jpeg" alt="Hollowveil cover artwork" />
+            </div>
+            <h3>Hollowveil</h3>
+            <p>
+              Explore a forgotten realm where drifting spirits and shadowed creatures guard ancient secrets.
+            </p>
+            <span class="badge">Available now</span>
+          </article>
+
+          <!-- Silkbound -->
+          <article class="card">
+            <div class="card-img">
+              <img src="images/silkbound.webp" alt="Silkbound cover artwork" />
+            </div>
+            <h3>Silkbound</h3>
+            <p>
+              A fast-paced ascent through towering ruins, weaving through danger with speed and precision.
+            </p>
+            <span class="badge">Upcoming</span>
+          </article>
+
+          <!-- Soundtracks -->
+          <article class="card">
+            <div class="card-img">
+              <img src="images/soundtrack.webp" alt="Nightberry Games soundtrack artwork" />
+            </div>
+            <h3>Soundtracks</h3>
+            <p>
+              Atmospheric scores crafted to deepen the worlds and emotions of Nightberry Games.
+            </p>
+            <span class="badge">Listen</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="section">
+      <div class="container">
+        <h2>News</h2>
+        <p class="muted">Development updates and studio announcements.</p>
+
+        <div class="news-tools" role="search">
+          <input id="newsSearch" type="search" placeholder="Search news..." />
+          <button class="btn ghost small" id="clearNews" type="button">Clear</button>
+        </div>
+
+        <div class="news-list" id="newsList">
+          <article class="news-item">
+            <h3>Patch update: performance improvements</h3>
+            <p class="muted">10 Jan 2026 • Update</p>
+            <p>Optimisations and stability improvements across multiple systems.</p>
+          </article>
+
+          <article class="news-item">
+            <h3>Behind the scenes: animation workflow</h3>
+            <p class="muted">03 Dec 2025 • Devlog</p>
+            <p>How character animations are refined for clarity and feel.</p>
+          </article>
+
+          <article class="news-item">
+            <h3>Soundtrack release now available</h3>
+            <p class="muted">18 Nov 2025 • Music</p>
+            <p>Original compositions expanding the mood of Nightberry worlds.</p>
+          </article>
+        </div>
+
+        <p id="noResults" class="muted" style="display:none;">No posts match your search.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">For press, partnerships, and general enquiries.</p>
+
+        <p><strong>Email:</strong> press@nightberrygames.example</p>
+        <p><strong>Location:</strong> Australia</p>
+
+        <form id="contactForm" class="form" novalidate>
+          <input id="name" type="text" placeholder="Your name" required />
+          <input id="email" type="email" placeholder="Your email" required />
+          <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+          <button class="btn primary" type="submit">Send</button>
+          <p id="formMsg" class="muted"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© 2026 Nightberry Games (Fictional studio for assessment).</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
